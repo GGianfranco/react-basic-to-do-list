@@ -1,0 +1,49 @@
+.task {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 1rem 0rem;
+  padding: 1rem 2rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: flex-start;
+}
+
+.task:hover {
+  filter: brightness(85%);
+}
+
+.checkbox {
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.task-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.remove {
+  height: 100%;
+  z-index: 9999;
+  margin-left: auto;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.remove:hover svg {
+  fill: red;
+  transform: rotate(15deg);
+}
